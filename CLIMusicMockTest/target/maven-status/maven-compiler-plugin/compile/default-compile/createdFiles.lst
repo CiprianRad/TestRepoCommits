@@ -1,0 +1,5 @@
+com\example\climusicmocktest\HelloController.class
+com\example\climusicmocktest\db\DatabaseManager.class
+com\example\climusicmocktest\HelloApplication.class
+module-info.class
+com\example\climusicmocktest\model\MusicTrack.class

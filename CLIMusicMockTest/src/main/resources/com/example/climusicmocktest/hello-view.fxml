@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.climusicmocktest.HelloController">
+    <top>
+        <VBox spacing="10">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Filter by Genre:"/>
+                <ComboBox fx:id="genreComboBox" prefWidth="150.0"/>
+                <Button fx:id="resetButton" text="Reset"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Playlist Name:"/>
+                <TextField fx:id="playlistNameField" prefWidth="150.0"/>
+                <Button fx:id="generateButton" text="Generate"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Button fx:id="showPlaylistsButton" text="Show Playlists"/>
+                <ComboBox fx:id="playlistComboBox" prefWidth="150.0"/>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="trackTableView">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID"/>
+                <TableColumn fx:id="bandColumn" prefWidth="150.0" text="Band"/>
+                <TableColumn fx:id="titleColumn" prefWidth="200.0" text="Title"/>
+                <TableColumn fx:id="genreColumn" prefWidth="100.0" text="Genre"/>
+                <TableColumn fx:id="lengthColumn" prefWidth="75.0" text="Length"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
